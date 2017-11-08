@@ -101,7 +101,7 @@ var helpers = {
   },
   adaptHeight: function () {
     if (this.props.adaptiveHeight) {
-      var selector = '[data-index="' + this.state.currentSlide +'"]';
+      var selector = '[data-index="' + this.state.currentSlide +'"] > div';
       if (this.list) {
         var slickList = ReactDOM.findDOMNode(this.list);
         slickList.style.height = slickList.querySelector(selector).offsetHeight + 'px';
